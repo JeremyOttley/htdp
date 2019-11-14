@@ -29,6 +29,7 @@
   (last (clojure.string/split string #"")))
 
 (defn ==>
-  "Ex. 15: The function consumes two Boolean values. Its answer is #true if sunny is false or friday is true."
+  "Ex. 15: The function consumes two Boolean values. 
+  Its answer is #true if sunny is false or friday is true."
   [sunny friday]
   (clojure.core/when (= sunny friday) true))
