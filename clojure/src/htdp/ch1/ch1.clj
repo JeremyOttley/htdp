@@ -39,3 +39,9 @@
   which consumes two strings and appends them with "_" in between."
   [string1 string2]
   (str string1 "_" string2))
+
+(defn string-insert
+  "Ex. 19: Define the function string-insert, which consumes a string str 
+  plus a number i and inserts "_" at the ith position of str."
+  [string i]
+  (get (clojure.string/split string #"") (- i 1)))
