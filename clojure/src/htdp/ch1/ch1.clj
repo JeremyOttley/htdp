@@ -13,7 +13,7 @@
   (* length length length))
 
 (defn csurface
-  "If you have time, consider defining csurface, too."
+  "Ex. 12: If you have time, consider defining csurface, too."
   [length]
   (* (* length length) 6))
 
@@ -24,6 +24,6 @@
   (first (clojure.string/split string #"")))
 
 (defn string-last
-  "Define the function string-last, which extracts the last 1String from a non-empty string."
+  "Ex. 14: Define the function string-last, which extracts the last 1String from a non-empty string."
   [string]
   (last (clojure.string/split string #"")))
