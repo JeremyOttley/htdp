@@ -22,3 +22,8 @@
   which extracts the first 1String from a non-empty string."
   [string]
   (first (clojure.string/split string #"")))
+
+(defn string-last
+  "Define the function string-last, which extracts the last 1String from a non-empty string."
+  [string]
+  (last (clojure.string/split string #"")))
