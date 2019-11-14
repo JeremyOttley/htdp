@@ -33,3 +33,9 @@
   Its answer is #true if sunny is false or friday is true."
   [sunny friday]
   (clojure.core/when (= sunny friday) true))
+
+(defn string-join
+  "Ex. 18: Define the function string-join, 
+  which consumes two strings and appends them with "_" in between."
+  [string1 string2]
+  (str string1 "_" string2))
