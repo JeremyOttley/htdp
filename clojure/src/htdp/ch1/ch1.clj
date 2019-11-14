@@ -27,3 +27,8 @@
   "Ex. 14: Define the function string-last, which extracts the last 1String from a non-empty string."
   [string]
   (last (clojure.string/split string #"")))
+
+(defn ==>
+  "Ex. 15: The function consumes two Boolean values. Its answer is #true if sunny is false or friday is true."
+  [sunny friday]
+  (clojure.core/when (= sunny friday) true))
