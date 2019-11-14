@@ -45,3 +45,10 @@
   plus a number i and inserts "_" at the ith position of str."
   [string i]
   (get (clojure.string/split string #"") (- i 1)))
+
+(defn string-delete
+  "Ex. 20: Define the function string-delete, which consumes a string 
+  plus a number i and deletes the ith position from str. "
+  [string i]
+  (vec (concat (subvec (clojure.string/split string #"") 0 i)
+  (subvec (clojure.string/split string #"") (inc i)))))
