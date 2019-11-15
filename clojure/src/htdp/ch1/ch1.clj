@@ -21,12 +21,16 @@
   "Ex. 13: Define the function string-first, 
   which extracts the first 1String from a non-empty string."
   [string]
-  (first (clojure.string/split string #"")))
+  (if (empty? string)
+  (do (println "Please insert non-empty string"))
+  (do (first string))))
 
 (defn string-last
   "Ex. 14: Define the function string-last, which extracts the last 1String from a non-empty string."
   [string]
-  (last (clojure.string/split string #"")))
+  (if (empty? string)
+  (do (println "Please insert non-empty string"))
+  (do (last string))))
 
 (defn ==>
   "Ex. 15: The function consumes two Boolean values. 
